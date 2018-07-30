@@ -11,8 +11,8 @@
   <label> Choose an existing pet: </label>
   <br></br>
 
-  <%= Pet.all.each do |pet| %>
-  <input type="checkbox" name="owner[pet_ids][]" value="<%=pet.id%>" id="<%=pet.id%>">
+  <%= @pets.each do |pet| %>
+  <input type="checkbox" name="owner[pet_ids][]" value="<%= pet.id %>" id="<%= pet.id %>">
   <%= pet.name %> </input> <% end %>
 <br></br>
 
