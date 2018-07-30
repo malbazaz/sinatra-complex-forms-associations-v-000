@@ -36,7 +36,7 @@ class PetsController < ApplicationController
   end
 
   post '/pets/:id' do
-    binding.pry
+    #binding.pry
     @pet = Pet.find_by_id(params[:id])
   #binding.pry
     @pet.update(name: params[:pet][:name], owner_id: params[:owner_id])
