@@ -1,3 +1,4 @@
+require 'pry'
 class PetsController < ApplicationController
 
   get '/pets' do
@@ -31,7 +32,6 @@ class PetsController < ApplicationController
   end
 
   get '/pets/:id' do
-
     @pet = Pet.find_by_id(params[:id])
     erb :'/pets/show'
   end
@@ -46,4 +46,5 @@ class PetsController < ApplicationController
     #end
     #redirect to "pets/#{@pet.id}"
   end
+
 end
