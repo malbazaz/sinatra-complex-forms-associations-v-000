@@ -20,7 +20,7 @@ class PetsController < ApplicationController
        @new_owner.name = params[:owner][:name]
      end
      @pet.save
-
+     @new_owner.save
     redirect to "pets/#{@pet.id}"
   end
 
