@@ -32,6 +32,7 @@ class OwnersController < ApplicationController
   end
 
   post '/owners/:id' do
+    binding.pry
 @owner = Owner.create(params["owner"])
   end
 end
