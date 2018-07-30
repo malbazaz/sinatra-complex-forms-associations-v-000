@@ -26,6 +26,6 @@ class OwnersController < ApplicationController
   end
 
   post '/owners/:id' do
-owner = Owner.create(params["owner"])
+@owner = Owner.create(params["owner"])
   end
 end
