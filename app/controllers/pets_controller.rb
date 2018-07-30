@@ -11,6 +11,7 @@ class PetsController < ApplicationController
   end
 
   post '/pets' do
+    binding.pry
     @owner = Owner.create(params)
      if !params["name"].empty?
        new_owner = Owner.create(name: params["name"])
