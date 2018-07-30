@@ -30,11 +30,11 @@ class PetsController < ApplicationController
     erb :'/pets/edit'
   end
 
-  get '/pets/:id' do
-
-    @pet = Pet.find_by_id(params[:id])
-    erb :'/pets/show'
-  end
+#  get '/pets/:id' do
+#
+#    @pet = Pet.find_by_id(params[:id])
+#    erb :'/pets/show'
+#  end
 
   post '/pets/:id' do
       binding.pry
