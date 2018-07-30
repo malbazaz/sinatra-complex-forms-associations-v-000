@@ -18,7 +18,6 @@ class PetsController < ApplicationController
        @owner = Owner.create(params[:owner_name])
        @pet.owner_id = @owner.id
 
-
      end
      @pet.save
      @owner.save
