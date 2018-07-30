@@ -3,6 +3,7 @@ class OwnersController < ApplicationController
 
   get '/owners' do
     @owners = Owner.all
+    binding.pry
     erb :'/owners/index'
   end
 
